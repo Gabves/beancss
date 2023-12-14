@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General definitions */
+    /* :root  */
+    :root{
+        font-family: 'Montserrat', sans-serif;
+    }
+    h1{
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    h2{
+        font-size: 2rem;
+        font-weight: 700;
+        color: rgba(0, 0, 0, .6);
+    }
+    h3{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    h4{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    p{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    p.caption{
+        font-size: .8rem;
+        font-weight: 800;
+    }
+    
+    /* Body */
+    body{
+        width: 100dvw;
+        height: 100dvh;
+        display: grid;
+        grid-template-columns: repeat(10, minmax(100px, 1fr));
+    }
+    body :is(header, aside, footer){
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        align-items: normal;
+        align-content: normal;
+        justify-content: center;
+    }
+    body :is(article, section){
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+        align-items: normal;
+        align-content: normal;
+        justify-content: flex-start;
+    }
+    body :is(header, footer){
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        align-items: center;
+        align-content: normal;
+        justify-content: center;
+    }
+
+    /* Header */
+    header{
+        grid-area: auto / 2 / auto / span 8;
+        height: 20dvh;
+    }
+
+    /* Article */
+    article{
+        grid-area: auto / 2 / auto / span 6;
+        height: 60dvh;
+        padding: 1em 1em 1em 1rem;
+    }
+
+    /* Section */
+    section{
+        width: 100%;
+    }
+
+    /* Aside */
+    aside{
+        grid-area: auto / 8 / auto / span 2;
+        height: 60dvh;
+    }
+
+    /* Footer */
+    footer{
+        grid-area: auto / 2 / auto / span 8;
+        height: 20dvh;
+    }
