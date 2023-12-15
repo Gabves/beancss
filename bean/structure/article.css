@@ -1,0 +1,12 @@
+article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    grid-column-start: calc(var(--body-width) - var(--template-width) - 1);
+    grid-column-end: span calc(var(--template-width) - var(--aside-width));
+    align-items: normal;
+    align-content: normal;
+    justify-content: flex-start;
+
+    padding: 6rem 1rem 1rem 1rem;
+}

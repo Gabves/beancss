@@ -1,0 +1,24 @@
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: normal;
+    align-content: normal;
+    justify-content: space-evenly;
+}
+
+nav a{
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    color: rgb(var(--light-color));
+
+    flex: 1;
+}
+nav a:not(:last-child){
+    padding-right: 5rem;
+}
+nav a:hover{
+    color: rgb(var(--primary-color));
+    transition: .1s;
+}

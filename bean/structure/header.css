@@ -1,0 +1,29 @@
+header{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    grid-column-start: calc(var(--body-width) - var(--template-width) - 1);
+    grid-column-end: span var(--template-width);
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+
+    width: 80dvw;
+    min-height: 80px;
+    max-height: 200px;
+    padding: 1rem 2rem;
+    left: 10dvw;
+    top: 1dvh;
+
+    background-color: rgb(var(--secondary-color));
+    border-radius: .5rem;
+}
+
+header h1{
+    font-size: 1.8rem;
+    color: rgb(var(--tertiary-color)) !important;
+}
+header h2{
+    color: rgb(var(--light-color), var(--h2-transparency)) !important;
+}

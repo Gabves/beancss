@@ -1,0 +1,16 @@
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    grid-column-start: calc(var(--body-width) - var(--footer-width) - 1);
+    grid-column-end: span var(--footer-width);
+    align-items: center;
+    align-content: normal;
+    justify-content: center;
+
+    min-height: 63px;
+    max-height: 200px;
+    height: 20dvh;
+
+    border-top: rgb(var(--secondary-color)) .1em solid;
+}

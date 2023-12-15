@@ -1,0 +1,12 @@
+aside{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    grid-column-start: calc(var(--body-width) - var(--aside-width) - 1);
+    grid-column-end: span var(--aside-width);
+    align-items: normal;
+    align-content: normal;
+    justify-content: center;
+
+    padding: 6rem 1rem 1rem 1rem;
+}

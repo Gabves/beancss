@@ -1,0 +1,8 @@
+body{
+    width: 100dvw;
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+
+    background-color: rgb(var(--light-color));
+}
