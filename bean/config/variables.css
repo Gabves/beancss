@@ -14,7 +14,12 @@
 
     /* Template Dimensions */
     --body-width: 20;
-    --template-width: 12;
-    --aside-width: 4;
-    --footer-width: 16;
+    --header-width: 14;
+    --header-start: 4;
+    --article-width: 8;
+    --article-start: calc(var(--aside-start) + var(--aside-width));
+    --aside-width: 3;
+    --aside-start: 4;
+    --footer-width: 14;
+    --footer-start: 4;
 }

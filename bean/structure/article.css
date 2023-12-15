@@ -2,8 +2,8 @@ article{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    grid-column-start: calc(var(--body-width) - var(--template-width) - 1);
-    grid-column-end: span calc(var(--template-width) - var(--aside-width));
+    grid-column-start: var(--article-start);
+    grid-column-end: span var(--article-width);
     align-items: normal;
     align-content: normal;
     justify-content: flex-start;

@@ -29,7 +29,7 @@ p.caption{
     color: rgb(var(--dark-color));
 }
 a{
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: .9rem;
+    font-weight: 400;
     color: rgb(var(--dark-color));
 }
